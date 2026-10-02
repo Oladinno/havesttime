@@ -5,10 +5,10 @@ import { AVATAR_URL, CONTACT_EMAIL, LOGO_URL } from "@/lib/site";
 
 const NAV_LINKS = [
   { label: "Home", href: "/" },
-  { label: "About & Roadmap", href: "/#about" },
+  { label: "About", href: "/about" },
   { label: "Brands & Platforms", href: "/brands-and-platforms" },
-  { label: "Research & Innovation", href: "#" },
-  { label: "Partnerships", href: "/#collaboration" },
+  { label: "Research & Innovation", href: "/research-and-innovation" },
+  { label: "Partnerships", href: "/partnerships" },
 ];
 
 export default function Header({ activeLabel = "Home" }: { activeLabel?: string }) {
@@ -83,13 +83,6 @@ export default function Header({ activeLabel = "Home" }: { activeLabel?: string 
 
           {/* Right-side actions */}
           <div className="flex items-center gap-space-md">
-            <Link
-              className="hidden sm:flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-colors font-label-lg text-label-lg"
-              href="#"
-            >
-              <Icon name="biotech" className="text-[18px] text-on-surface-variant" />
-              <span>Technical Specs / Portal</span>
-            </Link>
             <Link
               className="px-space-lg py-space-sm rounded-full bg-primary-container text-on-primary hover:bg-primary transition-all font-label-lg text-label-lg shadow-[0_4px_14px_rgba(20,54,40,0.2)] hover:shadow-none"
               href="/#collaboration"

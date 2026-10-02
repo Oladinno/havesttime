@@ -1,0 +1,37 @@
+   ▲ Next.js 15.5.27 (Turbopack)
+   - Local:        http://localhost:3000
+   - Network:      http://10.163.206.217:3000
+
+ ✓ Starting...
+ ✓ Ready in 8.6s
+ ○ Compiling /brands-and-platforms ...
+ ✓ Compiled /brands-and-platforms in 74.4s
+ GET /brands-and-platforms 200 in 117527ms
+ ○ Compiling /favicon.ico ...
+ ✓ Compiled /favicon.ico in 34.1s
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 42805ms
+ ○ Compiling /partnerships ...
+ GET /brands-and-platforms 200 in 20641ms
+ GET /research-and-innovation 200 in 55324ms
+ GET /brands-and-platforms 200 in 27632ms
+ ✓ Compiled /partnerships in 29.8s
+ GET /brands-and-platforms 200 in 15026ms
+ GET /partnerships 200 in 33809ms
+ GET /brands-and-platforms 200 in 4624ms
+ GET /brands-and-platforms 200 in 3643ms
+ GET /research-and-innovation 200 in 6515ms
+ GET /research-and-innovation 200 in 10717ms
+ ○ Compiling /research-and-innovation ...
+ ✓ Compiled in 5s
+ ✓ Compiled /research-and-innovation in 1589ms
+ GET /research-and-innovation 200 in 8070ms
+ GET /research-and-innovation 200 in 7788ms
+ GET /research-and-innovation 200 in 7523ms
+ ○ Compiling / ...
+ ✓ Compiled / in 13.4s
+ GET / 200 in 33768ms
+ GET / 200 in 23995ms
+ GET / 200 in 14056ms
+ GET / 200 in 14477ms
+ GET / 200 in 35019ms
+ GET / 200 in 18418ms

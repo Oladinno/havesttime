@@ -1,5 +1,7 @@
 export const CONTACT_EMAIL = "info@harvesttime.com";
 
+export const PARTNERSHIP_EMAIL = "info@harvestimefarms.com";
+
 export const LOGO_URL =
   "https://lh3.googleusercontent.com/aida/AEtjO1XR1-FViB1NeVy5PyXzY9mIGySHiuY7GuBEhqvta2fF0KRwFBoViSpOphEcBjGm5g2Rbt40Cp9yxCKEh1gW6ydMoKeSkcOE1rNghvjUyuL1-F7O5mNtOsZcxfqmzenuR8lYCQGjSiiLpyageEuIzSPMNYvSn_z7FKjt_MdXjh6YlgDBfybr53ZL5aTbQjQORgB16NsBVN_WFDqpwQTBFiZOECTDG_KpCIiu4BwtvIfbGGDBZj65Ee8gfhw";
 

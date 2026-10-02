@@ -13,11 +13,12 @@ const PLATFORM_LINKS = [
 ];
 
 const NAVIGATION_LINKS = [
-  "Corporate Overview",
-  "Institutional Roadmap",
-  "Nutritional R&D",
-  "Global Offtake Agreements",
-  "Agronomic Traceability",
+  { label: "Corporate Overview", href: "/about" },
+  { label: "Institutional Roadmap", href: "/about" },
+  { label: "Nutritional R&D", href: "/research-and-innovation" },
+  { label: "Partnership Opportunities", href: "/partnerships" },
+  { label: "Global Offtake Agreements", href: "/#collaboration" },
+  { label: "Agronomic Traceability", href: "/about" },
 ];
 
 const LEGAL_LINKS = [
@@ -87,10 +88,10 @@ export default function Footer() {
               Navigation
             </span>
             <ul className="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
-              {NAVIGATION_LINKS.map((label) => (
-                <li key={label}>
-                  <Link className="hover:text-primary transition-colors" href="#">
-                    {label}
+              {NAVIGATION_LINKS.map((link) => (
+                <li key={link.label}>
+                  <Link className="hover:text-primary transition-colors" href={link.href}>
+                    {link.label}
                   </Link>
                 </li>
               ))}
