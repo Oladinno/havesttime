@@ -17,7 +17,7 @@ const NAVIGATION_LINKS = [
   { label: "Institutional Roadmap", href: "/about" },
   { label: "Nutritional R&D", href: "/research-and-innovation" },
   { label: "Partnership Opportunities", href: "/partnerships" },
-  { label: "Global Offtake Agreements", href: "/#collaboration" },
+  { label: "Global Offtake Agreements", href: "/partnerships" },
   { label: "Agronomic Traceability", href: "/about" },
 ];
 

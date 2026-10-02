@@ -7,6 +7,3 @@ export const LOGO_URL =
 
 export const HERO_IMAGE_URL =
   "https://lh3.googleusercontent.com/aida-public/AB6AXuCMHJ_9f-ZjHSZs0F5-P2d8xg681Jfqy91cgzV-EYu8iW3tyG0irfKIHEgcLBUEx9cFHXtumAHt4uQh96ocr-VDCaICzFahrrzXXHic5HFTAW-yyvPOA5aQ05hfWKVFnPDcSzEx7sm7YcUTp8zJAXTu2XqWa30FA_o_MHW5iFF6yCKIQw4KhoNAn7y_QNORd6SW1oVcBXwYKxCS0X9v990p-v1yGdPYSOh0bt26J1OToSCrLq-sZY3E";
-
-export const AVATAR_URL =
-  "https://lh3.googleusercontent.com/aida-public/AB6AXuBWjnBaRSPP1alkvDZESjMwZWsOPdv_0xTXB7WOiD-3VkxfjMeZwZen9FI6PmDCiV4GcjtMtI7PpcbO-nnVoqM_INLY7Zt6RQeZ503g5u5_dyIYVWHQL2KOUwp_z1fEcF_PV85-Ze2pjXfZiLw38_YxE3ynFay_8B9ef1CD7r7nqZnxaL02AAtdXVSwRCGSpOTDPcc1TUFpQ2dO9SnGNn7dPJQCx401gJOlchMBYxAtpmqYUwXMH1qz";

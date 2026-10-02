@@ -4,7 +4,6 @@ import HeroSection from "@/components/HeroSection";
 import PathwaySection from "@/components/PathwaySection";
 import PlatformsSection from "@/components/PlatformsSection";
 import RoadmapSection from "@/components/RoadmapSection";
-import CollaborationSection from "@/components/CollaborationSection";
 
 export default function Home() {
   return (
@@ -16,7 +15,6 @@ export default function Home() {
           <PathwaySection />
           <PlatformsSection />
           <RoadmapSection />
-          <CollaborationSection />
         </div>
       </main>
       <Footer />

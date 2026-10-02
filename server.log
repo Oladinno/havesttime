@@ -35,3 +35,40 @@
  GET / 200 in 14477ms
  GET / 200 in 35019ms
  GET / 200 in 18418ms
+ GET / 200 in 30244ms
+ GET /research-and-innovation 200 in 53168ms
+ GET / 200 in 5835ms
+ GET / 200 in 19637ms
+ ✓ Compiled in 15.6s
+ ○ Compiling / ...
+ ✓ Compiled / in 4.1s
+ GET / 200 in 19200ms
+ GET / 200 in 23474ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 3319ms
+ ✓ Compiled in 1657ms
+ ○ Compiling / ...
+ ✓ Compiled / in 2s
+ ○ Compiling /about ...
+ GET / 200 in 7595ms
+ ✓ Compiled /about in 10.7s
+ GET /about 200 in 15498ms
+ GET /about 200 in 3795ms
+ GET /about 200 in 4212ms
+ GET /about 200 in 8024ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 8896ms
+ GET /about 200 in 10089ms
+ GET /about 200 in 5013ms
+ GET /about 200 in 3631ms
+ GET /about 200 in 4450ms
+ GET / 200 in 4191ms
+ GET / 200 in 3878ms
+ GET / 200 in 4745ms
+ GET / 200 in 9527ms
+ ✓ Compiled in 1534ms
+ ○ Compiling / ...
+ ✓ Compiled / in 751ms
+ GET / 200 in 2447ms
+ GET / 200 in 1290ms
+ GET / 200 in 1187ms
+ GET / 200 in 1475ms
+ GET / 200 in 1235ms

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import Icon from "./Icon";
-import { AVATAR_URL, CONTACT_EMAIL, LOGO_URL } from "@/lib/site";
+import { CONTACT_EMAIL, LOGO_URL } from "@/lib/site";
 
 const NAV_LINKS = [
   { label: "Home", href: "/" },
@@ -80,25 +80,6 @@ export default function Header({ activeLabel = "Home" }: { activeLabel?: string 
               );
             })}
           </nav>
-
-          {/* Right-side actions */}
-          <div className="flex items-center gap-space-md">
-            <Link
-              className="px-space-lg py-space-sm rounded-full bg-primary-container text-on-primary hover:bg-primary transition-all font-label-lg text-label-lg shadow-[0_4px_14px_rgba(20,54,40,0.2)] hover:shadow-none"
-              href="/#collaboration"
-            >
-              Partner With Us
-            </Link>
-            <div className="flex items-center pl-space-xs">
-              <Image
-                alt="Profile"
-                className="w-8 h-8 rounded-full object-cover ring-2 ring-primary-fixed"
-                height={32}
-                src={AVATAR_URL}
-                width={32}
-              />
-            </div>
-          </div>
         </div>
       </div>
     </header>

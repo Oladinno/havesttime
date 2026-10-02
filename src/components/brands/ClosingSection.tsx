@@ -39,7 +39,7 @@ export default function ClosingSection() {
         <div className="flex flex-wrap items-center gap-space-md pt-space-sm">
           <Link
             className="px-space-xl py-3.5 rounded-full bg-secondary text-on-secondary font-label-lg text-label-lg shadow-md hover:bg-secondary-container hover:text-on-secondary-container transition-all flex items-center gap-space-xs"
-            href="/#collaboration"
+            href="/partnerships"
           >
             <span>Partner With Us</span>
             <Icon className="text-[18px]" name="handshake" />

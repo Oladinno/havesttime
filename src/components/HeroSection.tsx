@@ -77,7 +77,7 @@ export default function HeroSection() {
             </a>
             <a
               className="px-space-xl py-3.5 rounded-full bg-secondary text-on-secondary font-label-lg text-label-lg shadow-md hover:bg-on-secondary-fixed transition-all flex items-center gap-space-xs"
-              href="#collaboration"
+              href="/partnerships"
             >
               <span>Partner With Us</span>
               <Icon className="text-[18px]" name="handshake" />
