@@ -5,11 +5,11 @@ import { CONTACT_EMAIL, LOGO_URL } from "@/lib/site";
 
 const BRAND_NAME = "HarvestTime";
 const PLATFORM_LINKS = [
-  "JUNABLEND™ Fortification",
-  "African Functional Seeds",
-  "FLOURVANT™ Composite Flours",
-  "CEREVANT™ Industrial Extrusions",
-  "Laboratory Formulation Sheets",
+  { label: "JUNABLEND™ Fibre Platform", href: "/brands-and-platforms#junablend" },
+  { label: "African Functional Seeds", href: "/brands-and-platforms#functional-seeds" },
+  { label: "Ogbono & Dawadawa Ingredients", href: "/brands-and-platforms#ogbono" },
+  { label: "FLOURVANT™ Flour Foods", href: "/brands-and-platforms#flourvant" },
+  { label: "CEREVANT™ Cereal Foods", href: "/brands-and-platforms#cerevant" },
 ];
 
 const NAVIGATION_LINKS = [
@@ -21,10 +21,8 @@ const NAVIGATION_LINKS = [
 ];
 
 const LEGAL_LINKS = [
-  "Privacy Policy",
-  "/privacy-policy",
-  "Terms of Use",
-  "/terms-of-use",
+  { label: "Privacy Policy", href: "/privacy-policy" },
+  { label: "Terms of Use", href: "/terms-of-use" },
 ];
 
 export default function Footer() {
@@ -74,10 +72,10 @@ export default function Footer() {
               Enterprise Platforms
             </span>
             <ul className="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
-              {PLATFORM_LINKS.map((label) => (
-                <li key={label}>
-                  <Link className="hover:text-primary transition-colors" href="#platforms">
-                    {label}
+              {PLATFORM_LINKS.map((link) => (
+                <li key={link.label}>
+                  <Link className="hover:text-primary transition-colors" href={link.href}>
+                    {link.label}
                   </Link>
                 </li>
               ))}
@@ -104,13 +102,10 @@ export default function Footer() {
               Governance & Legal
             </span>
             <ul className="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
-            {LEGAL_LINKS.map((label) => (
-              <li key={label}>
-                <Link
-                  className="hover:text-primary transition-colors"
-                  href={typeof label === "string" ? label : "#"}
-                >
-                  {label}
+            {LEGAL_LINKS.map((link) => (
+              <li key={link.label}>
+                <Link className="hover:text-primary transition-colors" href={link.href}>
+                  {link.label}
                 </Link>
               </li>
             ))}

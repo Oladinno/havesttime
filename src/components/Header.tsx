@@ -4,14 +4,14 @@ import Icon from "./Icon";
 import { AVATAR_URL, CONTACT_EMAIL, LOGO_URL } from "@/lib/site";
 
 const NAV_LINKS = [
-  { label: "Home", href: "#", active: true },
-  { label: "About & Roadmap", href: "#", active: false },
-  { label: "Brands & Platforms", href: "#platforms", active: false },
-  { label: "Research & Innovation", href: "#", active: false },
-  { label: "Partnerships", href: "#collaboration", active: false },
+  { label: "Home", href: "/" },
+  { label: "About & Roadmap", href: "/#about" },
+  { label: "Brands & Platforms", href: "/brands-and-platforms" },
+  { label: "Research & Innovation", href: "#" },
+  { label: "Partnerships", href: "/#collaboration" },
 ];
 
-export default function Header() {
+export default function Header({ activeLabel = "Home" }: { activeLabel?: string }) {
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(20,54,40,0.05)]">
       {/* Top utility strip */}
@@ -62,20 +62,23 @@ export default function Header() {
 
           {/* Desktop nav */}
           <nav className="hidden lg:flex items-center gap-space-md">
-            {NAV_LINKS.map((link) => (
-              <Link
-                key={link.label}
-                aria-current={link.active ? "page" : undefined}
-                className={
-                  link.active
-                    ? "transition-colors bg-primary-container text-on-primary font-label-lg text-label-lg px-space-md py-space-xs rounded-full shadow-sm"
-                    : "font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors"
-                }
-                href={link.href}
-              >
-                {link.label}
-              </Link>
-            ))}
+            {NAV_LINKS.map((link) => {
+              const isActive = link.label === activeLabel;
+              return (
+                <Link
+                  key={link.label}
+                  aria-current={isActive ? "page" : undefined}
+                  className={
+                    isActive
+                      ? "transition-colors bg-primary-container text-on-primary font-label-lg text-label-lg px-space-md py-space-xs rounded-full shadow-sm"
+                      : "font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors"
+                  }
+                  href={link.href}
+                >
+                  {link.label}
+                </Link>
+              );
+            })}
           </nav>
 
           {/* Right-side actions */}
@@ -89,7 +92,7 @@ export default function Header() {
             </Link>
             <Link
               className="px-space-lg py-space-sm rounded-full bg-primary-container text-on-primary hover:bg-primary transition-all font-label-lg text-label-lg shadow-[0_4px_14px_rgba(20,54,40,0.2)] hover:shadow-none"
-              href="#collaboration"
+              href="/#collaboration"
             >
               Partner With Us
             </Link>
