@@ -61,7 +61,7 @@ export default function HeroSection() {
 
           {/* Subhead */}
           <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
-            HarvestTime operates at the intersection of agriculture, food science, nutrition,
+            Harvestime operates at the intersection of agriculture, food science, nutrition,
             ingredient technology and commercialization. Making familiar foods work harder for
             human nutrition.
           </p>

@@ -42,7 +42,7 @@ export default function FlourvantSection() {
       icon="bakery_dining"
       id="flourvant"
       intro={[
-        "FLOURVANT™ is HarvestTime's B2B nutrition and ingredient platform for flour-based foods.",
+        "FLOURVANT™ is Harvestime's B2B nutrition and ingredient platform for flour-based foods.",
         "It is designed to help bakeries, food manufacturers and other food businesses improve the nutritional profile of familiar products while protecting the characteristics consumers expect.",
       ]}
       surfaceClass="bg-surface-container"

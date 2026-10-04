@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Terms of Use",
-  description: "Terms of use for HarvestTime — agriculture, food science, nutrition and commercial innovation.",
+  description: "Terms of use for Harvestime — agriculture, food science, nutrition and commercial innovation.",
 };
 
 export default function TermsOfUsePage() {
@@ -12,7 +12,7 @@ export default function TermsOfUsePage() {
         Terms of Use
       </h1>
       <p className="font-body-md text-body-md text-on-surface-variant mt-space-md">
-        By accessing or using the HarvestTime website, you agree to these Terms of Use.
+        By accessing or using the Harvestime website, you agree to these Terms of Use.
       </p>
 
       <section className="mt-space-xl">
@@ -24,7 +24,7 @@ export default function TermsOfUsePage() {
           purposes.
         </p>
         <p className="font-body-md text-body-md text-on-surface-variant mt-space-sm">
-          While HarvestTime aims to provide accurate current information, content may be
+          While Harvestime aims to provide accurate current information, content may be
           updated, changed or removed without notice.
         </p>
 
@@ -64,7 +64,7 @@ export default function TermsOfUsePage() {
         <p className="font-body-md text-body-md text-on-surface-variant mt-space-sm">
           Unless otherwise stated, website content, brand names, product concepts, technology
           names, text, graphics and other materials are owned by or used with authorization by
-          HarvestTime.
+          Harvestime.
         </p>
         <p className="font-body-md text-body-md text-on-surface-variant mt-space-sm">
           No material from this website may be copied, reproduced, distributed or commercially
@@ -75,7 +75,7 @@ export default function TermsOfUsePage() {
           Trademarks
         </h3>
         <p className="font-body-md text-body-md text-on-surface-variant mt-space-sm">
-          Names and marks displayed on this website, including HarvestTime product and
+          Names and marks displayed on this website, including Harvestime product and
           technology names, may be trademarks, pending trademarks or proprietary commercial
           identifiers.
         </p>
@@ -91,7 +91,7 @@ export default function TermsOfUsePage() {
           This website may contain links to third-party websites or resources.
         </p>
         <p className="font-body-md text-body-md text-on-surface-variant mt-space-sm">
-          HarvestTime is not responsible for the content, security, privacy practices or
+          Harvestime is not responsible for the content, security, privacy practices or
           availability of third-party websites.
         </p>
 
@@ -99,7 +99,7 @@ export default function TermsOfUsePage() {
           Limitation of Liability
         </h3>
         <p className="font-body-md text-body-md text-on-surface-variant mt-space-sm">
-          To the extent permitted by applicable law, HarvestTime will not be responsible for
+          To the extent permitted by applicable law, Harvestime will not be responsible for
           losses or damages arising solely from reliance on general information presented on
           this website.
         </p>
@@ -121,9 +121,9 @@ export default function TermsOfUsePage() {
         <p className="font-body-md text-body-md text-on-surface-variant mt-space-sm">
           <a
             className="text-primary underline"
-            href={`mailto:${process.env.CONTACT_EMAIL || "info@harvesttime.com"}`}
+            href={`mailto:${process.env.CONTACT_EMAIL || "info@harvestime.com"}`}
           >
-            info@harvesttime.com
+            info@harvestime.com
           </a>
         </p>
       </section>
@@ -137,10 +137,10 @@ export default function TermsOfUsePage() {
           agricultural supply or commercial opportunities, please contact us.
         </p>
         <p className="font-body-md text-body-md text-on-surface-variant mt-space-sm">
-          Email: info@harvesttime.com
+          Email: info@harvestime.com
         </p>
         <p className="font-body-md text-body-md text-on-surface-variant mt-space-sm">
-          Website: www.harvesttime.com
+          Website: www.harvestime.com
         </p>
       </section>
     </div>

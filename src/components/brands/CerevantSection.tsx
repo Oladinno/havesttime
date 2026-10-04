@@ -34,7 +34,7 @@ export default function CerevantSection() {
       icon="grain"
       id="cerevant"
       intro={[
-        "CEREVANT™ is HarvestTime's nutrition platform for cereal foods.",
+        "CEREVANT™ is Harvestime's nutrition platform for cereal foods.",
         "It focuses particularly on familiar maize, millet and sorghum foods that form an important part of everyday diets across Africa.",
       ]}
       surfaceClass="bg-surface"

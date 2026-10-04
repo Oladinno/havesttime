@@ -28,10 +28,10 @@ export default function EmergingSection() {
       icon="lightbulb"
       id="emerging"
       intro={[
-        "HarvestTime maintains an active innovation pipeline. Emerging concepts may come from a wide range of sources, and each one is assessed before it is allowed to progress.",
+        "Harvestime maintains an active innovation pipeline. Emerging concepts may come from a wide range of sources, and each one is assessed before it is allowed to progress.",
       ]}
       surfaceClass="bg-surface-container"
-      tagline="Building the Next Generation of HarvestTime Innovation"
+      tagline="Building the Next Generation of Harvestime Innovation"
       title="Emerging Products & Platforms"
     >
       <div className="flex flex-col gap-space-xl">
@@ -57,7 +57,7 @@ export default function EmergingSection() {
 
         <Callout icon="filter_alt">
           Only selected opportunities advance into formal development. This disciplined approach
-          allows HarvestTime to explore new ideas while keeping resources focused on the products
+          allows Harvestime to explore new ideas while keeping resources focused on the products
           and technologies with the strongest path to practical impact and commercialization.
         </Callout>
       </div>

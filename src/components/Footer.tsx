@@ -3,7 +3,7 @@ import Image from "next/image";
 import Icon from "./Icon";
 import { CONTACT_EMAIL, LOGO_URL } from "@/lib/site";
 
-const BRAND_NAME = "HarvestTime";
+const BRAND_NAME = "Harvestime";
 const PLATFORM_LINKS = [
   { label: "JUNABLEND™ Fibre Platform", href: "/brands-and-platforms#junablend" },
   { label: "African Functional Seeds", href: "/brands-and-platforms#functional-seeds" },
@@ -35,7 +35,7 @@ export default function Footer() {
           <div className="lg:col-span-2 flex flex-col gap-space-md pr-space-lg">
             <div className="flex items-center gap-space-sm">
               <Image
-                alt="HarvestTime Logo"
+                alt="Harvestime Logo"
                 className="h-8 w-auto object-contain"
                 height={32}
                 src={LOGO_URL}
@@ -117,10 +117,10 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="max-w-7xl mx-auto mt-space-xl pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md">
           <span className="font-spec-data text-spec-data text-on-surface-variant">
-            © 2026 HarvestTime. All rights reserved.
+            © 2026 Harvestime. All rights reserved.
           </span>
           <p className="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
-            Powered by HarvestTime — combining agriculture, food science, nutrition and commercial innovation.
+            Powered by Harvestime — combining agriculture, food science, nutrition and commercial innovation.
           </p>
           <div className="flex items-center gap-space-md font-spec-data text-spec-data text-on-surface-variant">
             <span className="flex items-center gap-space-xs">

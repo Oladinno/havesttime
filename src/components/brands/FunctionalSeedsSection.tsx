@@ -17,7 +17,7 @@ export default function FunctionalSeedsSection() {
       id="functional-seeds"
       intro={[
         "Africa has a rich portfolio of seeds and indigenous food ingredients that remain underdeveloped in modern food applications.",
-        "HarvestTime is building a structured platform around selected African seeds and traditional ingredients with the potential to deliver nutritional, functional and commercial value.",
+        "Harvestime is building a structured platform around selected African seeds and traditional ingredients with the potential to deliver nutritional, functional and commercial value.",
       ]}
       surfaceClass="bg-surface-container"
       tagline="From Traditional Ingredients to Modern Food Platforms"

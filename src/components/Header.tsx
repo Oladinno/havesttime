@@ -47,17 +47,14 @@ export default function Header({ activeLabel = "Home" }: { activeLabel?: string 
       <div className="h-20 w-full px-margin">
         <div className="max-w-7xl mx-auto h-full flex items-center justify-between">
           {/* Logo lockup */}
-          <div className="flex items-center gap-space-md">
+          <div className="flex items-center">
             <Image
-              alt="HarvestTime Corporate Logo"
-              className="h-8 w-auto object-contain"
-              height={32}
+              alt="Harvestime Farms & Agro Industries Ltd Corporate Logo"
+              className="h-14 w-auto object-contain"
+              height={56}
               src={LOGO_URL}
-              width={100}
+              width={200}
             />
-            <span className="font-headline-sm text-headline-sm text-primary leading-none tracking-tight">
-              HarvestTime
-            </span>
           </div>
 
           {/* Desktop nav */}

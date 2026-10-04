@@ -33,7 +33,7 @@ export default function OgbonoSection() {
       icon="grain"
       id="ogbono"
       intro={[
-        "Ogbono is widely known for its traditional use in soups, but HarvestTime sees opportunities beyond the conventional format.",
+        "Ogbono is widely known for its traditional use in soups, but Harvestime sees opportunities beyond the conventional format.",
         "We are developing applications that can serve household consumers, foodservice operators and food manufacturers.",
       ]}
       surfaceClass="bg-surface"
@@ -47,7 +47,7 @@ export default function OgbonoSection() {
       />
 
       <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed max-w-3xl">
-        HarvestTime&apos;s broader objective is to explore ogbono not only as a traditional soup
+        Harvestime&apos;s broader objective is to explore ogbono not only as a traditional soup
         ingredient, but as an African functional food ingredient with wider commercial potential.
       </p>
     </BrandSection>

@@ -27,7 +27,7 @@ export default function DawadawaSection() {
       id="dawadawa"
       intro={[
         "Dawadawa, or fermented African locust bean, is one of West Africa's established fermented food ingredients.",
-        "Its strong cultural relevance and distinctive savory character create opportunities for both traditional and modern food applications. HarvestTime is exploring how dawadawa can be developed into more standardized, convenient and versatile formats.",
+        "Its strong cultural relevance and distinctive savory character create opportunities for both traditional and modern food applications. Harvestime is exploring how dawadawa can be developed into more standardized, convenient and versatile formats.",
       ]}
       surfaceClass="bg-surface-container"
       tagline="Traditional Fermentation. Modern Applications."

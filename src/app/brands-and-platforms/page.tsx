@@ -10,12 +10,14 @@ import OtherIngredientsSection from "@/components/brands/OtherIngredientsSection
 import FlourvantSection from "@/components/brands/FlourvantSection";
 import CerevantSection from "@/components/brands/CerevantSection";
 import EmergingSection from "@/components/brands/EmergingSection";
+import ZuriEggsSection from "@/components/brands/ZuriEggsSection";
+import PalmaraSection from "@/components/brands/PalmaraSection";
 import ClosingSection from "@/components/brands/ClosingSection";
 
 export const metadata: Metadata = {
   title: "Brands & Platforms",
   description:
-    "HarvestTime's portfolio of food brands, ingredient systems and nutrition platforms — JUNABLEND™, African Functional Seeds, FLOURVANT™, CEREVANT™ and emerging products.",
+    "Harvestime's portfolio of food brands, ingredient systems and nutrition platforms — JUNABLEND™, African Functional Seeds, FLOURVANT™, CEREVANT™ and emerging products.",
 };
 
 export default function BrandsAndPlatformsPage() {
@@ -33,6 +35,8 @@ export default function BrandsAndPlatformsPage() {
           <FlourvantSection />
           <CerevantSection />
           <EmergingSection />
+          <ZuriEggsSection />
+          <PalmaraSection />
           <ClosingSection />
         </div>
       </main>

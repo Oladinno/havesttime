@@ -28,7 +28,7 @@ export default function JunablendSection() {
       icon="nutrition"
       id="junablend"
       intro={[
-        "JUNABLEND™ is HarvestTime's fibre-focused nutrition platform. It is built around a more practical question.",
+        "JUNABLEND™ is Harvestime's fibre-focused nutrition platform. It is built around a more practical question.",
         "Rather than treating fibre as a single-purpose ingredient, JUNABLEND™ is being developed around different nutritional functions, use occasions and consumer needs.",
       ]}
       surfaceClass="bg-surface"

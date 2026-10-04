@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
-  description: "Privacy practices for HarvestTime — agriculture, food science, nutrition and commercial innovation.",
+  description: "Privacy practices for Harvestime — agriculture, food science, nutrition and commercial innovation.",
 };
 
 export default function PrivacyPolicyPage() {
@@ -12,7 +12,7 @@ export default function PrivacyPolicyPage() {
         Privacy Policy
       </h1>
       <p className="font-body-md text-body-md text-on-surface-variant mt-space-md">
-        HarvestTime respects your privacy and is committed to handling personal information
+        Harvestime respects your privacy and is committed to handling personal information
         responsibly.
       </p>
 
@@ -59,14 +59,14 @@ export default function PrivacyPolicyPage() {
         <p className="font-body-md text-body-md text-on-surface-variant mt-space-sm">
           <a
             className="text-primary underline"
-            href={`mailto:${process.env.CONTACT_EMAIL || "info@harvesttime.com"}`}
+            href={`mailto:${process.env.CONTACT_EMAIL || "info@harvestime.com"}`}
           >
-            info@harvesttime.com
+            info@harvestime.com
           </a>
         </p>
 
         <p className="font-body-md text-body-md text-on-surface-variant mt-space-md">
-          HarvestTime may update this Privacy Policy from time to time as our website,
+          Harvestime may update this Privacy Policy from time to time as our website,
           operations or legal requirements change.
         </p>
       </section>
@@ -80,10 +80,10 @@ export default function PrivacyPolicyPage() {
           agricultural supply or commercial opportunities, please contact us.
         </p>
         <p className="font-body-md text-body-md text-on-surface-variant mt-space-sm">
-          Email: info@harvesttime.com
+          Email: info@harvestime.com
         </p>
         <p className="font-body-md text-body-md text-on-surface-variant mt-space-sm">
-          Website: www.harvesttime.com
+          Website: www.harvestime.com
         </p>
       </section>
     </div>

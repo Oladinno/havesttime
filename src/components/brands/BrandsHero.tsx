@@ -52,7 +52,7 @@ export default function BrandsHero() {
           </h1>
 
           <p className="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
-            HarvestTime develops a portfolio of food brands, ingredient systems and nutrition
+            Harvestime develops a portfolio of food brands, ingredient systems and nutrition
             platforms designed around practical consumer and industry needs.
           </p>
 

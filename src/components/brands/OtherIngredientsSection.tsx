@@ -21,7 +21,7 @@ export default function OtherIngredientsSection() {
       icon="travel_explore"
       id="other-ingredients"
       intro={[
-        "HarvestTime continues to investigate other African crops, seeds, fruits, grains, legumes and fermented foods that may offer meaningful nutritional or functional value.",
+        "Harvestime continues to investigate other African crops, seeds, fruits, grains, legumes and fermented foods that may offer meaningful nutritional or functional value.",
       ]}
       surfaceClass="bg-surface"
       title="Other Indigenous Ingredient Development"
@@ -36,7 +36,7 @@ export default function OtherIngredientsSection() {
         <Callout icon="filter_alt">
           Selected ingredients move forward only when they show credible potential across science,
           consumer relevance, manufacturing feasibility and commercial opportunity. This allows
-          HarvestTime to build a disciplined pipeline rather than developing products simply
+          Harvestime to build a disciplined pipeline rather than developing products simply
           because an ingredient is novel.
         </Callout>
       </div>

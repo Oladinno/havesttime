@@ -46,7 +46,7 @@ const PORTFOLIO = [
     iconClass: "bg-primary-fixed text-primary",
     badge: "Innovation Pipeline",
     title: "Emerging Products & Platforms",
-    tagline: "Building the Next Generation of HarvestTime Innovation",
+    tagline: "Building the Next Generation of Harvestime Innovation",
     description:
       "A disciplined pipeline assessed on market demand, technical feasibility, capital intensity, strategic fit and commercial opportunity.",
     href: "/brands-and-platforms#emerging",
@@ -111,7 +111,7 @@ export default function PlatformsSection() {
               </h3>
               <p className="font-body-sm text-body-sm text-on-primary-container leading-relaxed">
                 Development areas, applications, ingredient pathways and pipeline criteria for
-                every HarvestTime platform — including ogbono, dawadawa and other indigenous
+                every Harvestime platform — including ogbono, dawadawa and other indigenous
                 ingredient development.
               </p>
             </div>

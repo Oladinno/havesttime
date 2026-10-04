@@ -21,9 +21,9 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "HarvestTime",
+  title: "Harvestime",
   description:
-    "HarvestTime operates at the intersection of agriculture, food science, nutrition, ingredient technology and commercialization — transforming African agricultural resources into scalable nutrition.",
+    "Harvestime operates at the intersection of agriculture, food science, nutrition, ingredient technology and commercialization — transforming African agricultural resources into scalable nutrition.",
 };
 
 export default function RootLayout({
