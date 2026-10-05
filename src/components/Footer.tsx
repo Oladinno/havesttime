@@ -58,7 +58,7 @@ export default function Footer() {
             <div className="flex flex-col gap-space-xs font-spec-data text-spec-data text-on-surface-variant">
               <span className="flex items-center gap-space-xs">
                 <Icon name="location_on" className="text-[16px] text-primary" />
-                Lagos Headquarters & Regional Processing Hubs
+                Ogun Headquarters &amp; Regional Processing Hubs
               </span>
               <span className="flex items-center gap-space-xs">
                 <Icon name="mail" className="text-[16px] text-primary" />
