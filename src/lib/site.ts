@@ -1,4 +1,4 @@
-export const CONTACT_EMAIL = "info@harvestime.com";
+export const CONTACT_EMAIL = "info@harvestimefarms.com";
 
 export const PARTNERSHIP_EMAIL = "info@harvestimefarms.com";
 

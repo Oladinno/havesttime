@@ -120,9 +120,9 @@ export default function TermsOfUsePage() {
         </p>
         <p className="font-body-md text-body-md text-on-surface-variant mt-space-sm">          <a
             className="text-primary underline"
-            href={`mailto:${process.env.CONTACT_EMAIL || "info@harvestime.com"}`}
+            href={`mailto:${process.env.CONTACT_EMAIL || "info@harvestimefarms.com"}`}
           >
-            info@harvestime.com
+            info@harvestimefarms.com
           </a>
 
         </p>
@@ -137,10 +137,10 @@ export default function TermsOfUsePage() {
           agricultural supply or commercial opportunities, please contact us.
         </p>
         <p className="font-body-md text-body-md text-on-surface-variant mt-space-sm">
-          Email: info@harvestime.com
+          Email: info@harvestimefarms.com
         </p>
         <p className="font-body-md text-body-md text-on-surface-variant mt-space-sm">
-          Website: www.harvestime.com
+          Website: www.harvestimefarms.com
         </p>
       </section>
     </div>
