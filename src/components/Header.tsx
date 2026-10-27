@@ -14,19 +14,19 @@ const NAV_LINKS = [
 export default function Header({ activeLabel = "Home" }: { activeLabel?: string }) {
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(20,54,40,0.05)]">
-      {/* Top utility strip */}
-      <div className="w-full bg-primary-container text-on-primary py-space-xs px-margin">
-        <div className="max-w-7xl mx-auto flex items-center justify-between font-spec-data text-spec-data">
-          <div className="flex items-center gap-space-sm">
-            <span className="w-2 h-2 rounded-full bg-tertiary-fixed-dim inline-block animate-pulse"></span>
-            <span className="tracking-wide text-primary-fixed">
+      {/* Top utility strip — single row on all screens, more compact on small phones */}
+      <div className="w-full bg-primary-container text-on-primary py-2 px-4 sm:px-margin">
+        <div className="max-w-7xl mx-auto flex items-center justify-between font-spec-data text-spec-data text-[11px] sm:text-spec-data">
+          <div className="flex items-center gap-1.5 min-w-0">
+            <span className="w-2 h-2 rounded-full bg-tertiary-fixed-dim inline-block animate-pulse flex-shrink-0"></span>
+            <span className="tracking-wide text-primary-fixed truncate">
               Transforming African Agricultural Resources into Scalable Nutrition
             </span>
           </div>
-          <div className="hidden md:flex items-center gap-space-lg text-primary-fixed">
+          <div className="hidden md:flex items-center gap-space-lg text-primary-fixed flex-shrink-0">
             <span className="flex items-center gap-space-xs">
-              <Icon name="mail" className="text-[14px] text-tertiary-fixed-dim" />
-              Quick Contact:{" "}
+              <Icon name="mail" className="text-[14px] text-tertiary-fixed-dim shrink-0" />
+              <span className="whitespace-nowrap">Quick Contact:</span>
               <a
                 className="underline decoration-primary-fixed-dim/50 hover:text-on-primary transition-colors"
                 href={`mailto:${CONTACT_EMAIL}`}
@@ -34,28 +34,31 @@ export default function Header({ activeLabel = "Home" }: { activeLabel?: string 
                 {CONTACT_EMAIL}
               </a>
             </span>
-            <span className="opacity-40">|</span>
-            <span className="flex items-center gap-space-xs">
-              <Icon name="verified" className="text-[14px] text-tertiary-fixed-dim" />
-              ISO 22000 & HACCP Certified Labs
+            <span className="opacity-40 hidden lg:inline">|</span>
+            <span className="flex items-center gap-1.5 whitespace-nowrap">
+              <Icon name="verified" className="text-[14px] text-tertiary-fixed-dim shrink-0" />
+              <span className="text-[11px] sm:text-spec-data">ISO 22000 & HACCP Certified Labs</span>
             </span>
           </div>
         </div>
       </div>
 
       {/* Main navigation bar */}
-      <div className="h-20 w-full px-margin">
+      <div className="h-16 sm:h-20 w-full px-margin">
         <div className="max-w-7xl mx-auto h-full flex items-center justify-between">
           {/* Logo lockup */}
-          <div className="flex items-center">
+          <Link
+            className="flex items-center"
+            href="/"
+          >
             <Image
               alt="Harvestime Farms & Agro Industries Ltd Corporate Logo"
-              className="h-14 w-auto object-contain"
-              height={56}
+              className="h-12 sm:h-14 w-auto object-contain"
+              height={48}
               src={LOGO_URL}
-              width={200}
+              width={180}
             />
-          </div>
+          </Link>
 
           {/* Desktop nav */}
           <nav className="hidden lg:flex items-center gap-space-md">
@@ -69,6 +72,27 @@ export default function Header({ activeLabel = "Home" }: { activeLabel?: string 
                     isActive
                       ? "transition-colors bg-primary-container text-on-primary font-label-lg text-label-lg px-space-md py-space-xs rounded-full shadow-sm"
                       : "font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors"
+                  }
+                  href={link.href}
+                >
+                  {link.label}
+                </Link>
+              );
+            })}
+          </nav>
+
+          {/* Tablet link stack (between phone and desktop) */}
+          <nav className="hidden lg:hidden items-start gap-2 overflow-x-auto scrollbar-hide">
+            {NAV_LINKS.map((link) => {
+              const isActive = link.label === activeLabel;
+              return (
+                <Link
+                  key={link.label}
+                  aria-current={isActive ? "page" : undefined}
+                  className={
+                    isActive
+                      ? "transition-colors bg-primary-container text-on-primary font-label-md text-label-md px-3 py-1.5 rounded-full shadow-sm whitespace-nowrap"
+                      : "font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap"
                   }
                   href={link.href}
                 >

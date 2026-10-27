@@ -1,8 +1,17 @@
 type IconProps = {
   name: string;
   className?: string;
+  style?: React.CSSProperties;
 };
 
-export default function Icon({ name, className = "" }: IconProps) {
-  return <span className={`material-symbols-outlined ${className}`}>{name}</span>;
+export default function Icon({ name, className = "", style }: IconProps) {
+  return (
+    <span
+      className={`material-symbols-outlined ${className}`}
+      style={style}
+      aria-hidden="true"
+    >
+      {name}
+    </span>
+  );
 }

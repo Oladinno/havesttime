@@ -54,7 +54,7 @@ export default function HeroSection() {
           </div>
 
           {/* Main headline */}
-          <h1 className="font-headline-xl text-headline-xl text-primary leading-tight font-bold tracking-tight">
+          <h1 className="font-headline-xl text-headline-xl text-primary leading-tight font-bold tracking-tight responsive-headline-xl">
             Transforming Agricultural Resources into{" "}
             <span className="text-secondary">Science-Led Nutrition</span>
           </h1>
@@ -69,14 +69,14 @@ export default function HeroSection() {
           {/* CTA action buttons */}
           <div className="flex flex-wrap items-center gap-space-md pt-space-sm">
             <a
-              className="px-space-xl py-3.5 rounded-full bg-primary-container text-on-primary font-label-lg text-label-lg shadow-md hover:bg-primary transition-all flex items-center gap-space-xs"
+              className="px-space-lg sm:px-space-xl py-3 rounded-full sm:py-3.5 rounded-full bg-primary-container text-on-primary font-label-lg text-label-lg shadow-md hover:bg-primary transition-all flex items-center gap-space-xs text-center sm:text-left"
               href="#platforms"
             >
               <span>Explore Our Platforms</span>
               <Icon className="text-[18px]" name="arrow_downward" />
             </a>
             <a
-              className="px-space-xl py-3.5 rounded-full bg-secondary text-on-secondary font-label-lg text-label-lg shadow-md hover:bg-on-secondary-fixed transition-all flex items-center gap-space-xs"
+              className="px-space-lg sm:px-space-xl py-3 rounded-full sm:py-3.5 rounded-full bg-secondary text-on-secondary font-label-lg text-label-lg shadow-md hover:bg-on-secondary-fixed transition-all flex items-center gap-space-xs text-center sm:text-left"
               href="/partnerships"
             >
               <span>Partner With Us</span>
@@ -85,10 +85,10 @@ export default function HeroSection() {
           </div>
 
           {/* Live scientific status indicators */}
-          <div className="flex flex-wrap items-center gap-space-lg pt-space-md text-on-surface-variant font-spec-data text-spec-data">
+          <div className="flex flex-wrap items-center gap-space-md pt-space-md text-on-surface-variant font-spec-data text-spec-data text-[11px] sm:text-spec-data">
             {STATUS_INDICATORS.map((item) => (
-              <div className="flex items-center gap-space-xs" key={item.label}>
-                <Icon className={`text-[16px] ${item.color}`} name={item.icon} />
+              <div className="flex items-center gap-1.5 sm:gap-space-xs" key={item.label}>
+                <Icon className={`text-[14px] sm:text-[16px] ${item.color}`} name={item.icon} />
                 <span>{item.label}</span>
               </div>
             ))}
@@ -100,13 +100,13 @@ export default function HeroSection() {
           <div className="relative bg-surface-container rounded-xl p-space-md shadow-xl overflow-hidden">
             <Image
               alt="Food science laboratory setting in an agro-industrial processing plant showing high precision nutrient formulation of golden grains, composite flours, and natural bioactive extracts in calibrated glass beakers with deep green vegetation background."
-              className="w-full h-80 object-cover rounded-lg"
-              height={320}
+              className="w-full h-64 sm:h-80 object-cover rounded-lg"
+              height={256}
               src={HERO_IMAGE_URL}
-              width={640}
+              width={512}
             />
             {/* Overlaid scientific monospace card */}
-            <div className="absolute bottom-6 left-6 right-6 p-space-md bg-surface-container-lowest/95 backdrop-blur-md rounded-lg shadow-lg flex items-center justify-between">
+            <div className="absolute bottom-4 left-4 right-4 p-space-sm sm:p-space-md bg-surface-container-lowest/95 backdrop-blur-md rounded-lg shadow-lg flex flex-wrap items-center justify-between gap-3">
               <div className="flex flex-col">
                 <span className="font-spec-data text-[11px] text-on-surface-variant uppercase tracking-wider">
                   Formula Integrity Index
@@ -115,8 +115,8 @@ export default function HeroSection() {
                   99.84% Traceable
                 </span>
               </div>
-              <div className="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center text-primary-fixed">
-                <Icon className="text-[24px]" name="mobile_rotate_lock" />
+              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-primary-container flex items-center justify-center text-primary-fixed">
+                <Icon className="text-[20px] sm:text-[24px]" name="mobile_rotate_lock" />
               </div>
             </div>
           </div>
@@ -124,11 +124,11 @@ export default function HeroSection() {
       </div>
 
       {/* Key impact metrics banner */}
-      <div className="max-w-7xl mx-auto mt-16 pt-space-lg bg-surface-container-low rounded-xl p-space-lg shadow-sm">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-gutter text-center">
+      <div className="max-w-7xl mx-auto mt-12 sm:mt-16 pt-space-md sm:pt-space-lg bg-surface-container-low rounded-xl p-space-md sm:p-space-lg shadow-sm">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-gutter text-center">
           {METRICS.map((metric) => (
             <div className="flex flex-col items-center" key={metric.label}>
-              <span className={`font-headline-xl text-headline-xl font-bold ${metric.valueColor}`}>
+              <span className={`font-headline-xl text-headline-xl font-bold responsive-headline-xl ${metric.valueColor}`}>
                 {metric.value}
               </span>
               <span className="font-label-lg text-label-lg text-on-surface font-semibold">

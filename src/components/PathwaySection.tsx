@@ -70,49 +70,49 @@ const NODES: PathwayNode[] = [
 
 export default function PathwaySection() {
   return (
-    <section className="w-full bg-surface-container-high py-24 px-margin">
+    <section className="w-full bg-surface-container-high py-20 sm:py-24 px-4 sm:px-margin">
       <div className="max-w-7xl mx-auto flex flex-col gap-space-xl">
         {/* Section heading */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-space-md">
           <div className="flex flex-col gap-space-xs">
             <div className="inline-flex items-center gap-space-xs text-primary font-spec-data text-spec-data uppercase tracking-wider">
               <Icon className="text-[16px]" name="account_tree" />
               <span>Rigorous Industrial Methodology</span>
             </div>
-            <h2 className="font-headline-lg text-headline-lg text-on-surface font-bold">
+            <h2 className="font-headline-lg text-headline-lg text-on-surface font-bold responsive-headline-lg">
               The Innovation Pathway:{" "}
               <span className="text-primary-container">From Crop to Commercialization</span>
             </h2>
           </div>
-          <p className="font-body-md text-body-md text-on-surface-variant max-w-md">
+          <p className="font-body-md text-body-md text-on-surface-variant max-w-md mt-auto">
             A closed-loop pipeline translating smallholder indigenous agronomy into validated,
             high-value consumer ingredients and clinical formulations.
           </p>
         </div>
 
         {/* Process diagram ribbon */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-7 gap-space-sm relative">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-7 gap-3 sm:gap-space-sm relative">
           {NODES.map((node) => (
             <div
-              className="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow group"
+              className="bg-surface-container-lowest p-space-md sm:p-space-sm rounded-lg shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow group"
               key={node.step}
             >
-              <div className="flex items-center justify-between mb-space-sm">
+              <div className="flex items-center justify-between mb-2">
                 <span
                   className={`font-spec-data text-spec-data px-2 py-0.5 rounded-full ${node.badgeClass}`}
                 >
                   {node.step}
                 </span>
                 <Icon
-                  className={`text-[24px] ${node.iconColor} group-hover:scale-110 transition-transform`}
+                  className={`text-[20px] sm:text-[24px] ${node.iconColor} group-hover:scale-110 transition-transform`}
                   name={node.icon}
                 />
               </div>
               <div>
-                <h3 className="font-label-lg text-label-lg text-on-surface font-bold mb-1">
+                <h3 className="font-label-md text-label-md text-on-surface font-bold mb-1">
                   {node.title}
                 </h3>
-                <p className="font-body-sm text-body-sm text-on-surface-variant">
+                <p className="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
                   {node.description}
                 </p>
               </div>

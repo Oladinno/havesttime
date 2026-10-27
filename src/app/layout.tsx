@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { JetBrains_Mono, Outfit, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
+import ClientProviders from "./ClientProviders";
 
 const outfit = Outfit({
   variable: "--font-outfit",
@@ -34,7 +35,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Icon font — Material Symbols Outlined (ligature-based glyphs) */}
         <link
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap"
           rel="stylesheet"
@@ -43,7 +43,7 @@ export default function RootLayout({
       <body
         className={`${outfit.variable} ${plusJakartaSans.variable} ${jetbrainsMono.variable} bg-background font-body-md text-on-surface antialiased`}
       >
-        {children}
+        <ClientProviders>{children}</ClientProviders>
       </body>
     </html>
   );

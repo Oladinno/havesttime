@@ -58,7 +58,7 @@ export default function Footer() {
             <div className="flex flex-col gap-space-xs font-spec-data text-spec-data text-on-surface-variant">
               <span className="flex items-center gap-space-xs">
                 <Icon name="location_on" className="text-[16px] text-primary" />
-                Ogun Headquarters &amp; Regional Processing Hubs
+                Ogun Headquarters & Regional Processing Hubs
               </span>
               <span className="flex items-center gap-space-xs">
                 <Icon name="mail" className="text-[16px] text-primary" />
@@ -69,7 +69,7 @@ export default function Footer() {
 
           {/* Link columns */}
           <div className="flex flex-col gap-space-sm">
-            <span className="font-label-lg text-label-lg text-primary uppercase tracking-wider font-bold">
+            <span className="font-label-md text-label-md text-primary uppercase tracking-wider font-bold">
               Enterprise Platforms
             </span>
             <ul className="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
@@ -84,7 +84,7 @@ export default function Footer() {
           </div>
 
           <div className="flex flex-col gap-space-sm">
-            <span className="font-label-lg text-label-lg text-primary uppercase tracking-wider font-bold">
+            <span className="font-label-md text-label-md text-primary uppercase tracking-wider font-bold">
               Navigation
             </span>
             <ul className="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
@@ -99,7 +99,7 @@ export default function Footer() {
           </div>
 
           <div className="flex flex-col gap-space-sm">
-            <span className="font-label-lg text-label-lg text-primary uppercase tracking-wider font-bold">
+            <span className="font-label-md text-label-md text-primary uppercase tracking-wider font-bold">
               Governance & Legal
             </span>
             <ul className="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
@@ -115,15 +115,15 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="max-w-7xl mx-auto mt-space-xl pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md">
+        <div className="max-w-7xl mx-auto mt-space-lg sm:mt-space-xl pt-space-md sm:pt-space-lg flex flex-col sm:flex-row lg:flex-row items-center justify-between gap-space-md gap-3">
           <span className="font-spec-data text-spec-data text-on-surface-variant">
             © 2026 Harvestime. All rights reserved.
           </span>
-          <p className="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+          <p className="font-body-sm text-body-sm text-on-surface-variant">
             Powered by Harvestime — combining agriculture, food science, nutrition and commercial innovation.
           </p>
-          <div className="flex items-center gap-space-md font-spec-data text-spec-data text-on-surface-variant">
-            <span className="flex items-center gap-space-xs">
+          <div className="flex items-center gap-space-md font-spec-data text-spec-data text-on-surface-variant flex-wrap justify-center lg:justify-end">
+            <span className="flex items-center gap-1.5">
               <span className="w-1.5 h-1.5 rounded-full bg-tertiary-fixed-dim"></span>
               African Agribusiness Integrity Index: AAA
             </span>

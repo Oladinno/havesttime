@@ -4,11 +4,13 @@ import HeroSection from "@/components/HeroSection";
 import PathwaySection from "@/components/PathwaySection";
 import PlatformsSection from "@/components/PlatformsSection";
 import RoadmapSection from "@/components/RoadmapSection";
+import MobileMenu from "@/components/MobileMenu";
 
 export default function Home() {
   return (
     <>
       <Header />
+      <MobileMenu />
       <main className="w-full pt-20 bg-background min-h-screen">
         <div className="flex flex-col w-full">
           <HeroSection />

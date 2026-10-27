@@ -65,13 +65,13 @@ const STAGES: RoadmapStage[] = [
 
 export default function RoadmapSection() {
   return (
-    <section className="w-full bg-surface-container py-24 px-margin">
+    <section className="w-full bg-surface-container py-20 sm:py-24 px-4 sm:px-margin">
       <div className="max-w-7xl mx-auto flex flex-col gap-space-xl">
-        <div className="flex flex-col gap-space-xs">
+        <div className="flex flex-col gap-space-xs text-center sm:text-left">
           <span className="font-spec-data text-spec-data text-on-surface-variant uppercase tracking-wider">
             Multi-Year Trajectory
           </span>
-          <h2 className="font-headline-lg text-headline-lg text-on-surface font-bold">
+          <h2 className="font-headline-lg text-headline-lg text-on-surface font-bold responsive-headline-lg">
             Strategic Industrial Roadmap
           </h2>
           <p className="font-body-md text-body-md text-on-surface-variant max-w-2xl">
@@ -81,7 +81,7 @@ export default function RoadmapSection() {
         </div>
 
         {/* Visual stage progression rail */}
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-space-md">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-4 sm:gap-space-md">
           {STAGES.map((stage) => (
             <div
               className={`bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-xs border-t-4 ${stage.borderClass}`}
@@ -91,12 +91,12 @@ export default function RoadmapSection() {
                 <span className={`font-spec-data text-[11px] font-bold ${stage.stageColor}`}>
                   {stage.stage}
                 </span>
-                <Icon className={`text-[18px] ${stage.iconColor}`} name={stage.icon} />
+                <Icon className={`text-[16px] sm:text-[18px] ${stage.iconColor}`} name={stage.icon} />
               </div>
               <h4 className="font-headline-sm text-headline-sm text-on-surface font-bold">
                 {stage.title}
               </h4>
-              <p className="font-body-sm text-body-sm text-on-surface-variant">
+              <p className="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
                 {stage.description}
               </p>
             </div>

@@ -118,13 +118,13 @@ export default function TermsOfUsePage() {
         <p className="font-body-md text-body-md text-on-surface-variant mt-space-md">
           For legal or website-related enquiries, contact:
         </p>
-        <p className="font-body-md text-body-md text-on-surface-variant mt-space-sm">
-          <a
+        <p className="font-body-md text-body-md text-on-surface-variant mt-space-sm">          <a
             className="text-primary underline"
             href={`mailto:${process.env.CONTACT_EMAIL || "info@harvestime.com"}`}
           >
             info@harvestime.com
           </a>
+
         </p>
       </section>
 

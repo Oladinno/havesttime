@@ -157,3 +157,49 @@ main > :last-child {
 ::-webkit-scrollbar {
   display: none;
 }
+
+/* ---------- Responsive adjustments ---------- */
+
+/* Small phones (roughly <360px) */
+@media (max-width: 359px) {
+  .responsive-headline-xl {
+    font-size: var(--text-headline-xl-mobile);
+    line-height: var(--text-headline-xl-mobile--line-height);
+    letter-spacing: var(--text-headline-xl-mobile--letter-spacing);
+    font-weight: var(--text-headline-xl-mobile--font-weight);
+  }
+
+  .responsive-headline-lg {
+    font-size: var(--text-headline-lg-mobile);
+    line-height: var(--text-headline-lg-mobile--line-height);
+    letter-spacing: var(--text-headline-lg-mobile--letter-spacing);
+    font-weight: var(--text-headline-lg-mobile--font-weight);
+  }
+
+  .responsive-spacing-gutter {
+    --spacing-gutter: var(--spacing-gutter-mobile);
+  }
+
+  .responsive-margin {
+    --spacing-margin: var(--spacing-margin-mobile);
+  }
+}
+
+/* Default / desktop-first breakpoints handled by Tailwind utilities above;
+   these rules refine edge-case behavior for very small and very large viewports. */
+
+/* Prevent overly tall hero text on small screens without wrapping weirdly */
+@media (max-width: 420px) {
+  .hero-headline {
+    font-size: var(--text-headline-xl-mobile);
+    line-height: var(--text-headline-xl-mobile--line-height);
+    letter-spacing: var(--text-headline-xl-mobile--letter-spacing);
+  }
+}
+
+/* On very wide screens, constrain line lengths a bit more for readability */
+@media (min-width: 1400px) {
+  .max-w-prose-wide {
+    max-width: 72ch;
+  }
+}
