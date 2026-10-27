@@ -125,7 +125,7 @@ export default function HeroSection() {
 
       {/* Key impact metrics banner */}
       <div className="max-w-7xl mx-auto mt-12 sm:mt-16 pt-space-md sm:pt-space-lg bg-surface-container-low rounded-xl p-space-md sm:p-space-lg shadow-sm">
-        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-gutter text-center">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-gutter text-center">
           {METRICS.map((metric) => (
             <div className="flex flex-col items-center" key={metric.label}>
               <span className={`font-headline-xl text-headline-xl font-bold responsive-headline-xl ${metric.valueColor}`}>

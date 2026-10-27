@@ -80,27 +80,6 @@ export default function Header({ activeLabel = "Home" }: { activeLabel?: string 
               );
             })}
           </nav>
-
-          {/* Tablet link stack (between phone and desktop) */}
-          <nav className="hidden lg:hidden items-start gap-2 overflow-x-auto scrollbar-hide">
-            {NAV_LINKS.map((link) => {
-              const isActive = link.label === activeLabel;
-              return (
-                <Link
-                  key={link.label}
-                  aria-current={isActive ? "page" : undefined}
-                  className={
-                    isActive
-                      ? "transition-colors bg-primary-container text-on-primary font-label-md text-label-md px-3 py-1.5 rounded-full shadow-sm whitespace-nowrap"
-                      : "font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap"
-                  }
-                  href={link.href}
-                >
-                  {link.label}
-                </Link>
-              );
-            })}
-          </nav>
         </div>
       </div>
     </header>

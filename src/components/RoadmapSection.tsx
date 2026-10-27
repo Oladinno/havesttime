@@ -81,7 +81,7 @@ export default function RoadmapSection() {
         </div>
 
         {/* Visual stage progression rail */}
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-4 sm:gap-space-md">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-space-md">
           {STAGES.map((stage) => (
             <div
               className={`bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-xs border-t-4 ${stage.borderClass}`}

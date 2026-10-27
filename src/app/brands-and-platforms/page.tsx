@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import MobileMenu from "@/components/MobileMenu";
+import BackToHome from "@/components/BackToHome";
 import BrandsHero from "@/components/brands/BrandsHero";
 import JunablendSection from "@/components/brands/JunablendSection";
 import FunctionalSeedsSection from "@/components/brands/FunctionalSeedsSection";
@@ -24,7 +26,9 @@ export default function BrandsAndPlatformsPage() {
   return (
     <>
       <Header activeLabel="Brands & Platforms" />
-      <main className="w-full pt-20 bg-background min-h-screen">
+      <MobileMenu />
+      <main className="w-full pt-[100px] sm:pt-[116px] bg-background min-h-screen">
+        <BackToHome />
         <div className="flex flex-col w-full">
           <BrandsHero />
           <JunablendSection />

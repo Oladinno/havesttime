@@ -71,16 +71,17 @@
   --font-spec-data: "JetBrains Mono", ui-monospace, "SFMono-Regular", monospace;
 
   /* ---------- Type scale (size / line-height / letter-spacing / weight) ---------- */
-  --text-headline-xl: 48px;
-  --text-headline-xl--line-height: 56px;
+  /* Headline sizes are fluid (clamp) so they scale smoothly between phones and desktops */
+  --text-headline-xl: clamp(32px, 5.5vw, 48px);
+  --text-headline-xl--line-height: 1.15;
   --text-headline-xl--letter-spacing: -0.02em;
   --text-headline-xl--font-weight: 700;
   --text-headline-xl-mobile: 32px;
   --text-headline-xl-mobile--line-height: 40px;
   --text-headline-xl-mobile--letter-spacing: -0.01em;
   --text-headline-xl-mobile--font-weight: 700;
-  --text-headline-lg: 36px;
-  --text-headline-lg--line-height: 44px;
+  --text-headline-lg: clamp(26px, 4.5vw, 36px);
+  --text-headline-lg--line-height: 1.2;
   --text-headline-lg--letter-spacing: -0.015em;
   --text-headline-lg--font-weight: 600;
   --text-headline-lg-mobile: 26px;
@@ -120,14 +121,15 @@
   --text-spec-data--font-weight: 500;
 
   /* ---------- Spacing tokens ---------- */
+  /* Margin/gutter shrink fluidly on small screens instead of a fixed 3rem/1.5rem */
   --spacing-space-xs: 0.25rem;
   --spacing-space-sm: 0.5rem;
   --spacing-space-md: 1rem;
   --spacing-space-lg: 1.5rem;
   --spacing-space-xl: 2.5rem;
-  --spacing-gutter: 1.5rem;
+  --spacing-gutter: clamp(0.75rem, 2.5vw, 1.5rem);
   --spacing-gutter-mobile: 1rem;
-  --spacing-margin: 3rem;
+  --spacing-margin: clamp(1.25rem, 4vw, 3rem);
   --spacing-margin-mobile: 1.25rem;
 }
 

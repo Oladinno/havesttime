@@ -1,4 +1,8 @@
 import type { Metadata } from "next";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import MobileMenu from "@/components/MobileMenu";
+import BackToHome from "@/components/BackToHome";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
@@ -7,7 +11,12 @@ export const metadata: Metadata = {
 
 export default function PrivacyPolicyPage() {
   return (
-    <div className="max-w-4xl mx-auto px-margin py-24">
+    <>
+      <Header activeLabel="Privacy Policy" />
+      <MobileMenu />
+      <main className="w-full pt-[100px] sm:pt-[116px] bg-background min-h-screen">
+        <BackToHome />
+        <div className="max-w-4xl mx-auto px-margin py-24">
       <h1 className="font-headline-xl text-headline-xl text-on-surface font-bold">
         Privacy Policy
       </h1>
@@ -87,5 +96,8 @@ export default function PrivacyPolicyPage() {
         </p>
       </section>
     </div>
+      </main>
+      <Footer />
+    </>
   );
 }

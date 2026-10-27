@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import MobileMenu from "@/components/MobileMenu";
+import BackToHome from "@/components/BackToHome";
 import PartnershipsHero from "@/components/partnerships/PartnershipsHero";
 import ResearchSection from "@/components/partnerships/ResearchSection";
 import AgricultureSection from "@/components/partnerships/AgricultureSection";
@@ -20,7 +22,9 @@ export default function PartnershipsPage() {
   return (
     <>
       <Header activeLabel="Partnerships" />
-      <main className="w-full pt-20 bg-background min-h-screen">
+      <MobileMenu />
+      <main className="w-full pt-[100px] sm:pt-[116px] bg-background min-h-screen">
+        <BackToHome />
         <div className="flex flex-col w-full">
           <PartnershipsHero />
           <ResearchSection />

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import MobileMenu from "@/components/MobileMenu";
+import BackToHome from "@/components/BackToHome";
 import AboutHero from "@/components/about/AboutHero";
 import AboutStorySection from "@/components/about/AboutStorySection";
 import AboutApproachSection from "@/components/about/AboutApproachSection";
@@ -17,7 +19,9 @@ export default function AboutPage() {
   return (
     <>
       <Header activeLabel="About" />
-      <main className="w-full pt-20 bg-background min-h-screen">
+      <MobileMenu />
+      <main className="w-full pt-[100px] sm:pt-[116px] bg-background min-h-screen">
+        <BackToHome />
         <div className="flex flex-col w-full">
           <AboutHero />
           <AboutStorySection />

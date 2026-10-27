@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <Header />
       <MobileMenu />
-      <main className="w-full pt-20 bg-background min-h-screen">
+      <main className="w-full pt-[100px] sm:pt-[116px] bg-background min-h-screen">
         <div className="flex flex-col w-full">
           <HeroSection />
           <PathwaySection />
